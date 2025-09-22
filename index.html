@@ -21,6 +21,12 @@
         color: red;
         font-size: 14px;
       }
+      #result-details ul {
+        padding-left: 20px;
+      }
+      #result-details li {
+        margin-bottom: 4px;
+      }
     </style>
   </head>
   <body>
@@ -28,7 +34,7 @@
       <h2 class="mb-4 text-center">💰 Kalkulator Pengeluaran Bulanan</h2>
       <p class="text-muted text-center">
         Masukkan semua kebutuhanmu lalu klik <b>Hitung Total</b> untuk melihat
-        ringkasan.
+        ringkasan detail.
       </p>
 
       <!-- Workdays -->
@@ -78,14 +84,8 @@
       <!-- Hasil -->
       <div class="card mt-4">
         <div class="card-header fw-bold">📊 Ringkasan Pengeluaran</div>
-        <div class="card-body">
-          <p>Total Transport & Makan: <span id="totalWorkdays">0</span></p>
-          <p>Total Kegiatan Khusus: <span id="totalCustom">0</span></p>
-          <p>Total Tagihan Bulanan: <span id="totalFixed">0</span></p>
-          <hr />
-          <h5 class="text-success">
-            Grand Total: <span id="grandTotal">0</span>
-          </h5>
+        <div class="card-body" id="result-details">
+          <p class="text-muted">Belum ada perhitungan.</p>
         </div>
       </div>
     </div>
