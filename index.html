@@ -21,11 +21,8 @@
         color: red;
         font-size: 14px;
       }
-      #result-details ul {
+      #result ul {
         padding-left: 20px;
-      }
-      #result-details li {
-        margin-bottom: 4px;
       }
     </style>
   </head>
@@ -34,8 +31,17 @@
       <h2 class="mb-4 text-center">💰 Kalkulator Pengeluaran Bulanan</h2>
       <p class="text-muted text-center">
         Masukkan semua kebutuhanmu lalu klik <b>Hitung Total</b> untuk melihat
-        ringkasan detail.
+        ringkasan & alokasi bank.
       </p>
+
+      <!-- Input daftar bank -->
+      <div class="card">
+        <div class="card-header fw-bold">🏦 Daftar Bank</div>
+        <div class="card-body">
+          <div id="bank-list" class="mb-2"></div>
+          <button class="btn btn-sm btn-primary" onclick="addBank()">+ Tambah Bank</button>
+        </div>
+      </div>
 
       <!-- Workdays -->
       <div class="card">
@@ -84,8 +90,8 @@
       <!-- Hasil -->
       <div class="card mt-4">
         <div class="card-header fw-bold">📊 Ringkasan Pengeluaran</div>
-        <div class="card-body" id="result-details">
-          <p class="text-muted">Belum ada perhitungan.</p>
+        <div class="card-body" id="result">
+          <p class="text-muted">Belum ada data.</p>
         </div>
       </div>
     </div>
