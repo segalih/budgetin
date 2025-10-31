@@ -146,8 +146,8 @@ function addCustomDayItem(button) {
   div.classList.add("row", "mb-2");
   div.innerHTML = `
     <div class="col"><input type="text" class="form-control" placeholder="Nama aktivitas"></div>
-    <div class="col"><input type="number" class="form-control" placeholder="Jumlah hari/x"></div>
-    <div class="col"><input type="number" class="form-control" placeholder="Biaya per hari"></div>
+    <div class="col"><input type="number" class="form-control" placeholder="Jumlah pembayaran/bulan"></div>
+    <div class="col"><input type="number" class="form-control" placeholder="Biaya per pembayaran"></div>
     <div class="col">${createBankSelect()}</div>
     <div class="col-auto d-flex align-items-center">
       <span class="remove-btn" onclick="this.parentElement.parentElement.remove(); saveData();">❌</span>
